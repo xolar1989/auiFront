@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.8f04e77a.css">
+    <link href="/index.bd970033.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="/index.21d82f1f.css">
+    <script src="/index.617ab4d7.js" defer=""></script>
+
+</head>
+<body>
+<!-- header -->
+<nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ALBICLA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Comments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Users</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class=" container d-flex flex-column" style="background-color: pink">
+    <form class="d-flex m-3">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <div class="d-flex justify-content-center m-2">
+        <button type="button" class="btn btn-dark" id="add-comment-modal-button" style="width: 150px">Add Comment</button>
+    </div>
+    <div class="my-container  d-flex flex-row flex-wrap justify-content-around">
+    </div>
+</main>
+
+
+<!-- my modal add comment -->
+<div id="my-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Comment</h5>
+                <button type="button" class="btn-close close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Text</span>
+                    <input type="text" class="form-control inputValue" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Image Path</span>
+                    <input type="text" class="form-control inputImageUrl" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary send-button">Add Comment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- my modal edit comment -->
+<div id="my-modal-edit" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Comment</h5>
+                <button type="button" class="btn-close close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Text</span>
+                    <input type="text" class="form-control edit-value" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Image Path</span>
+                    <input type="text" class="form-control edit-imagePath" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary button-edit">Edit Comment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
